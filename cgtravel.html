@@ -1,0 +1,589 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Travelers Podcast</title>
+    <style>
+
+        body{
+            margin: 0%;
+            padding: 0%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 10px;
+            text-transform: capitalize;
+        }
+        .navbar{
+            background-color: rgb(8, 8, 8);
+            width: 100%;
+            height: 40px;
+        }
+        .navbarin{
+            width: 100%;
+            height: 100%; 
+        }
+        .navbarul{
+        width: 100%;
+        height: 100%;
+        display:flex;
+        justify-content: start;
+        
+        }
+        .navbarul li{
+            height: 100%;
+            display: flex;
+            padding:0px 15px;
+            list-style-type: none;
+            align-items: center;
+            
+        }
+        .navbarul li :hover{
+            background-color: rgb(253, 253, 253);
+            color: black;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0px 10px;
+            font-weight: 600;
+            
+        }
+        .navbarul li a{
+            
+            color : white;
+            text-decoration: none;
+            font-weight: 500;
+            text-transform: capitalize;
+            font-size:1.5em;
+            padding: opx 8px;
+            
+
+        }
+        .navbar2{
+            height: 64px;
+            width: 100%;
+            background-color: rgb(253, 142, 160);
+            justify-content: space-between;
+            display: flex;
+            font-size: 1.7em;
+            font-weight: 500;
+
+        }
+        .one{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            margin: 0px 15px;
+
+        }
+        .one a{
+            padding: 0px 2px;
+            margin: 0px 2px;
+        }
+        .one a img{
+            height: 100%;
+        }
+        .one .spanexplore{
+            background-color: rgb(247, 108, 155);
+            padding:2px 2px;
+            border: 2px solid black;
+            border-radius: 10%;
+            margin: 0px 4px;
+        }
+        .one .spanexplore:hover{
+            background-color: rgb(170, 73, 106);
+            padding:2px 2px;
+            border: 2px solid whitesmoke;
+            border-radius: 10%;
+            margin: 0px 4px;
+        }
+        .one .spanexplore a:hover{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+           }
+        .one .spanexplore a{
+            text-decoration: none;
+            color: white;
+            width: 100%;
+            height: 100%;
+            padding:2px 2px;
+           }
+        .one input{
+            padding: 4px 4px;
+            width:250px;
+
+        }
+        .two{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            margin: 0px 15px;
+        }
+        .two a{
+            text-decoration: none;
+            font-weight: 500;
+            color:whitesmoke;
+            padding: 0px 3px;
+            margin: 0px 0px;
+        }
+        .login{
+            display: flex;
+            margin:0px 3px;
+            list-style-type: none;
+        }
+        .login li{
+            display: flex;
+            padding: 0px 2px;
+            margin:0px 3px;
+        }
+        main{
+            width: 100%;
+            background-color: rgb(247, 242, 242);
+        }
+        .first1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0px;
+        height:700px;
+        width: 100%;
+        background-image:url(martin-jernberg-nE2gf1scItI-unsplash.jpg);
+        background-size: cover;
+        /* background-color: rgb(205, 248, 245); */
+        background-repeat: no-repeat;
+        }
+        .width1{
+            display: flex;
+            width: 1000px;
+            align-items: center;
+            justify-content: center;
+            /* margin: 0px auto; */
+            padding:auto 20px;
+        }
+        .padding1{
+            margin:0px 50px ;
+        }
+        .padding2{
+            margin:0px 50px ;
+        }
+        .padding1 h1{
+            font-size:6em;  
+        }
+        .padding1 h1 a{
+            text-decoration: none;
+            color: white;
+        }
+        .aboutweb{
+            font-size: 1.6em;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            display: flex;
+            flex-direction: column;
+        }
+        .aboutweb span{
+            margin: 10px 0px;
+        }
+        .aboutweb button{
+            margin-right: 15px ;
+            background-color: rgb(209, 104, 139);
+            padding:5px 10px;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+        .aboutweb a{
+            color: azure;
+            text-decoration:underline;
+            font-weight: 500;
+        }
+        .padding2 img{
+            width: 350px;
+            height: 350px;
+            /* background-repeat: no-repeat; */
+            opacity:0.9;
+        }
+        .first2{
+            height: 200px;
+            width: 100%;
+            margin: 30px 0px;
+            background-color: rgb(216, 197, 235);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .first21{
+            width:1000px;
+            font-size:2em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0px 10px;
+        }
+        .componylink{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .componyname{
+            width:100%;
+            display: flex;
+            justify-content: space-evenly;
+            margin:0px 10px;
+        }
+        .componyname img{
+            height:100px;
+        }
+        .first3{
+            width: 100%;
+            margin:30px 0px;
+            height:700px;
+            background-color: rgba(100, 210, 230, 0.89);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .first31{
+            
+            width:1000px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            flex-direction:column;
+            
+        }
+        .first312{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .statedetail{
+            width:280px;
+            height: 80px;
+            border-radius: 5px;
+            color: black;
+            font-size: 2em;
+            text-decoration: none;
+            font-weight: 500;
+            margin: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .statedetail div{
+            width:280px;
+            height: 80px;
+            background-color: rgba(170, 171, 172, 0.137);
+            border-radius: 5px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            border: none;
+        }
+        .statedetail div img{
+            width:80px;
+            height: 80px;
+            background-size:cover;
+            margin-right: 15px;
+            
+        }
+        .fisrt311{
+            display: flex;
+            justify-content:start;
+        }
+        .fisrt311 h2 {
+            display: flex;
+            justify-content:start;
+            font-size: 2em;
+            font-weight: 500;
+        }
+        .first312 div{
+            box-shadow: 0px 0px 10px rgb(0, 0, 0);
+        }
+        .first4{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 30px 0px;
+            background-color: rgb(245, 150, 158);
+        }
+        .first41{
+            width: 1000px;
+            display: flex;
+            flex-direction: column;
+            padding: 40px 0px;
+            margin: 0px 30px;
+        }
+        .card4{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .card41{
+            width:230px;
+            height: 350px;
+            border: 1px solid rgb(161, 157, 157);
+            background-color: aliceblue;
+            border-radius: 15px;
+            box-shadow: 0px 0px 10px rgb(0, 0, 0);
+            overflow: hidden;
+        }
+        .card41 img{
+            height: 180px;
+        }
+
+        
+
+
+        
+        footer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .footerin{
+            display: flex;
+            align-items: top;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 1000px;
+        }
+        .footerin div ul{
+            width:150px
+        }
+        .apanexplore{
+            background-color: rgb(212, 82, 154);
+            border-radius: 7px;
+            border: 2px solid black;
+            padding: 5px 8px;
+            margin: 0px 10px;
+        }
+        .apanexplore a{
+            color: white;
+            text-decoration: none;
+        }    
+        .downloadapp a img{
+            display: block;
+            height:50px;
+            margin:10px 10px;
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+    <header> 
+        <div class="navbar">
+                <nav class="navbarin">
+                    <ul class="navbarul">
+                        <li><a href="">for individuals</a></li>
+                        <li><a href="">for business</a></li>
+                        <li><a href="">for university</a></li>
+                        <li><a href="">for government</a></li>
+                    </ul>
+                </nav>
+        </div>
+        <div class="navbar2">
+            <div class="one">
+                <a href="coursera.html" target="_blank"><img src="travel-bag.png" alt="The travelers podcast" height="64px"></a>
+                <span class="spanexplore"><a href="">explore</a></span>
+                <input type="text" placeholder="Search......">
+                <div><img src="" alt=""></div>
+            </div>
+            <div class="two">
+                <a href="">online degrees</a>
+                <a href=""> find your new career</a>
+                <ul class="login"><li><a href="">log in</a></li><li><a href="">join for free</a></li></ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="first1" >
+            <div class="width1">
+                <div class="padding1">
+                    <h1><a href="">tourism of india</a></h1>
+                    <div class="aboutweb">
+                        <span>India is one of the world's most popular tourist destinations. It attracts millions of tourists each year with its natural beauty, cultural heritage, and historic sites. 
+                        </span>
+                        <span><button>join for free </button>
+                            <a href=""><span>join us for traveling</span></a></span>
+                    </div>
+                </div>
+                <div class="padding2">
+                    <img src="jayanth-muppaneni-sSDnp4pp3NA-unsplash.jpg" alt="" >
+                </div>
+            </div>
+        </div>
+        <div class="first2">
+            <div class="first21">
+                <div class="componylink">We collaborate with <a href="compony">300+ leading universities and companies</a></div>
+                <br>
+                <div class="componyname">
+                    <img src="mahindra.png" alt="">
+                    <img src="amul.png" alt="">
+                    <img src="airtel.png" alt="">
+                    <img src="hero.png" alt="">
+                    <img src="bsnl.png" alt="">
+                    <img src="tata.png" alt="">
+                    <img src="phonepe.png" alt="">
+                    <img src="myntra.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="first3">
+            <div class="first31">
+                <div class="first311"><h2>explore india</h2></div>
+                <div class="first312">
+                    <a href="" class="statedetail"><div><img src="yash-kiran-Ii4-mpa_g3Y-unsplash.jpg" alt=""><span>madhya pradesh</span></div></a>
+                    <a href="" class="statedetail"><div><img src="dexter-fernandes-y97sM41-g9k-unsplash.jpg" alt=""><span>rajisthan</span></div></a>
+                    <a href="" class="statedetail"><div><img src="aditya-prakash-nhODNvOsGI0-unsplash.jpg" alt=""><span>west bangal</span></div></a>
+                    <a href="" class="statedetail"><div><img src="ramakrishnan-nataraj-SzMR1Vcf5aw-unsplash.jpg" alt=""><span>tamilnadu</span></div></a>
+                    <a href="" class="statedetail"><div><img src="hans-jurgen-mager-MrW_AqAFNR0-unsplash.jpg" alt=""><span>assam</span></div></a>
+                    <a href="" class="statedetail"><div><img src="ujjval-verma-klj4MrR4Djk-unsplash.jpg" alt=""><span>odisha</span></div></a>
+                    <a href="" class="statedetail"><div><img src="manyu-varma-mM6cUV3B9M8-unsplash.jpg" alt=""><span>kerla</span></div></a>
+                    <a href="" class="statedetail"><div><img src="sonika-agarwal-7LrifMX_KFU-unsplash.jpg" alt=""><span>maharastra</span></div></a>
+                    <a href="" class="statedetail"><div><img src="srivatsan-balaji-T5s48osIQTU-unsplash.jpg" alt=""><span>uttrakhand</span></div></a>
+                    <a href="" class="statedetail"><div><img src="vicky-munde-upq5LE9gASU-unsplash.jpg" alt=""><span>goa</span></div></a>
+                    <a href="" class="statedetail"><div><img src="chaitanya-maheshwari-0r-vQt9yLos-unsplash.jpg" alt=""><span>ladakh</span></div></a>
+                    <a href="" class="statedetail"><div><img src="naveed-ahmed-9Dt4WutvwDs-unsplash.jpg" alt=""><span>More</span></div></a>
+                </div>
+            </div>
+        </div>
+        <div class="first4">
+            <div class="first41">
+                <h2>exlore destination</h2>
+            <span>get a destination that's make you happy</span>
+            <p>great destination make you great person </p>
+            <div class="card4">
+                <a href=""><div class="card41"><img src="manyu-varma-mM6cUV3B9M8-unsplash.jpg" alt=""> <h3>ooty</h3> <span>ooty is a hillstation</span></div></a>
+                <a href=""><div class="card41"><img src="aditya-prakash-nhODNvOsGI0-unsplash.jpg" alt=""> <h3>ooty</h3> <span>ooty is a hillstation</span></div></a>
+                <a href=""><div class="card41"><img src="naman-srivastava-xJ1PhwDAbW0-unsplash.jpg" alt=""> <h3>ooty</h3> <span>ooty is a hillstation</span></div></a>
+                <a href=""><div class="card41"><img src="hans-jurgen-mager-MrW_AqAFNR0-unsplash.jpg" alt=""> <h3>ooty</h3> <span>ooty is a hillstation</span></div></a>
+            </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footerin">
+            <div>
+                <ul>
+                    <h6>New & Trending</h6>
+                    <li>New Courses</li>
+                    <li>Free Courses</li>
+                    <li>Google Professional Certificates</li>
+                    <li>Artificial Intelligence</li>
+                    <li>Cybersecurity</li>
+                    <li>Data Science</li>
+                    <li>Excel</li>
+                    <li>Generative AI with LLMs</li>
+                    <li>Prompt Engineering</li>
+                    <li>Python</li>
+                    <li>See career pathways</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <h6>Popular Subjects</h6>
+                    <li>Computer Science</li>
+                    <li>Data Analysis</li>
+                    <li>Data Analysis</li>
+                    <li>Information Technology</li>
+                    <li>Learning English</li>
+                    <li>Machine Learning</li>
+                    <li>Power Bi</li>
+                    <li>Product Management</li>
+                    <li>Project Management</li>
+                    <li>Web Development</li>
+                    <li>See all courses</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <h6>Popular Career Certificates</h6>
+                    <li>Google Cybersecurity Professional Certificate</li>
+                    <li>Google Data Analytics Professional Certificate</li>
+                    <li>Google Digital Marketing & E-commerce Professional Certificate</li>
+                    <li>Google IT Support Professional Certificate</li>
+                    <li>Google Project Management Professional Certificate</li>
+                    <li>IBM Data Analyst Professional Certificate</li>
+                    <li>IBM Data Science Professional Certificate</li>
+                    <li>Meta Front-End Developer Professional Certificate</li>
+                    <li>Microsoft Power BI Data Analyst Professional Certificate</li>
+                    <li>See all career certificates</li>
+                </ul>
+            </div>
+            <div>                
+                <ul>
+                    <h6>Popular Career Articles</h6>
+                    <li>Examples of Strengths and Weaknesses for Job Interviews</li>
+                    <li>How to Write an Eye-Catching Job Application Email</li>
+                    <li>How to Highlight Duplicates in Google Sheets</li>
+                    <li>How to Write a Letter of Recommendation</li>
+                    <li>Popular Cybersecurity Certifications</li>
+                    <li>High-Income Skills Worth Learning</li>
+                    <li>How to Announce Your New Job on LinkedIn</li>
+                    <li>How to Ask for a Letter of Recommendation</li>
+                    <li>What Is a Data Scientist?</li>
+                    <li>Top Job Search Tips to Help You Get Hired</li>
+                    <li>See all career articles</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <h6>Coursera</h6>
+                    <li>About</li>
+                    <li>What We Offer
+                    </li>
+                    <li>Leadership</li>
+                    <li>Leadership</li>
+                    <li>Catalog</li>
+                    <li>Coursera Plus</li>
+                    <li>Professional Certificates</li>
+                    <li>MasterTrack® Certificates</li>
+                    <li>Degrees</li>
+                    <li>For Enterprise</li>
+                    <li>For Government</li>
+                    <li>For Campus</li>
+                    <li>Become a Partner</li>
+                    <li>Coronavirus Response</li>
+                    <li>Free Courses</li>
+                    <li>All Courses</li>
+                </ul></div>
+            <div>              
+                <ul>
+                    <h6>Community</h6>
+                    <li>Learners</li>
+                    <li>Partners</li>
+                    <li>Beta Testers</li>
+                    <li>Translators</li>
+                    <li>Blog</li>
+                    <li>Tech Blog</li>
+                    <li>Teaching Center</li>                   
+                </ul></div>
+            <div>               
+                <ul>
+                    <h6>More</h6>
+                    <li>press</li>
+                    <li>investers</li>
+                    <li>terms</li>
+                    <li>privecy</li>
+                    <li>help</li>
+                    <li>accessibility</li>
+                    <li>contect</li>
+                    <li>articles</li>
+                    <li>directory</li>
+                    <li>affiliates</li>
+                    <li>Modern Slavery Statement</li>
+                    <li>Do Not Sell/Share</li>
+                </ul>
+            </div>
+            <div class="downloadapp">
+                <a href="playstore.com"><img src="adb_FILL0_wght400_GRAD0_opsz24.png" alt=""></a>
+                <a href="ios.com"><img src="ios_FILL0_wght400_GRAD0_opsz24.png" alt=""></a>
+            </div>
+
+        </div>
+        
+        
+    </footer>
+</body>
+</html>
